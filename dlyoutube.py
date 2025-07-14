@@ -1,4 +1,4 @@
-import yt_dlp  #นำเข้าไลบรารีชื่อ yt_dlp เพื่อใช้ดาวน์โหลดวิดีโอจาก YouTube
+import yt_dlp  #นำไลบรารีชื่อ yt_dlp เพื่อใช้ดาวน์โหลดวิดีโอจาก YouTube
 def download_youtube_video(url, save_path="."): #ตั้งชื่อฟังก์ชันชื่อ download_youtube_video และมีการรับพารามิเตอร์ 2 ตัว
     ydl_opts = {      #กำหนดตัวเลือกให้กับ yt_dlp เช่น
         'outtmpl': f'{save_path}/%(title)s.%(ext)s',
